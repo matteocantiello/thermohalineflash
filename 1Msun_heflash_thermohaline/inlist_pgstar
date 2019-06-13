@@ -1,0 +1,31 @@
+&pgstar
+
+         !pause = .true.
+         
+         Profile_Panels4_win_flag = .true. ! Abundance, Power, Mixing_Ds, and Dynamo    
+         Profile_Panels4_num_panels = 4
+         Profile_Panels4_title = 'Abundance-Power-Mixing-He'
+
+         Profile_Panels4_yaxis_name(4) = 'log he4'
+         Profile_Panels4_ymin(4) = -1
+         Profile_Panels4_ymax(4) = 0.1
+
+
+         Profile_Panels4_win_width = 10
+         Profile_Panels4_win_aspect_ratio = 0.7 ! aspect_ratio = height/width
+
+         Profile_Panels4_xmin = 0d0 ! only used if /= -101d0
+         Profile_Panels4_xmax = 0.5d0 ! only used if /= -101d0
+
+         !History_Panels1_win_flag = .true. ! logT, logRho, log_L, log_Teff
+         !Grid8_win_flag = .true. ! Summary_Burn, Abundance, HR, TRho, TRho_Profile, Text_Summary1
+         
+         Profile_Panels4_xaxis_name = 'mass'
+         Profile_Panels4_xaxis_reversed = .false.
+
+         Profile_Panels4_file_flag = .true.
+         Profile_Panels4_file_dir = 'png'
+         Profile_Panels4_file_prefix = 'he_flash_'
+         Profile_Panels4_file_interval = 10 ! output when mod(model_number,Profile_Panels4_file_interval)==0
+
+/ ! end of pgstar namelist
